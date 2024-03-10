@@ -1,0 +1,13 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .block {
+    width: 35%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Image and Input</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #content-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #input-section {
+            margin-left: 20px;
+        }
+
+        #user-input {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #output {
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="content-container">
+        <img src="your-image-url.jpg" alt="Description of the image">
+        <div id="input-section">
+            <label for="user-input">Enter some content:</label>
+            <input type="text" id="user-input">
+            <button onclick="displayOutput()">Submit</button>
+            <p id="output"></p>
+        </div>
+    </div>
+
+    <script>
+        function displayOutput() {
+            var userInput = document.getElementById("user-input").value;
+            document.getElementById("output").innerText = "User input: " + userInput;
+        }
+    </script>
+</body>
+</html>
